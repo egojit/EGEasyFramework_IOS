@@ -22,4 +22,5 @@
 
 #define VIEW_BG  [UIColor whiteColor]//背景色配置
 
+
 #endif /* easydeveloper_pch */

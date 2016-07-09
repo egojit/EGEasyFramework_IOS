@@ -17,6 +17,8 @@
 		DE3245931D30B63D00B3F7D5 /* EGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE3245921D30B63D00B3F7D5 /* EGViewController.m */; };
 		DE32459B1D30BCE200B3F7D5 /* UIColor+EGColor.m in Sources */ = {isa = PBXBuildFile; fileRef = DE32459A1D30BCE200B3F7D5 /* UIColor+EGColor.m */; };
 		DE32459F1D30BDBD00B3F7D5 /* Default-568h@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DE32459E1D30BDBD00B3F7D5 /* Default-568h@2x 2.png */; };
+		DE620B471D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B461D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m */; };
+		DE620B4B1D30C66B008C1EA9 /* NSString+EGStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B4A1D30C66B008C1EA9 /* NSString+EGStringExt.m */; };
 		DE8784C71D2F7D6A00F80F7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8784BF1D2F7D6A00F80F7E /* ViewController.m */; };
 		DE8784CC1D2F7EA000F80F7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8784CB1D2F7EA000F80F7E /* AppDelegate.m */; };
 		DE8784CE1D2F7EC600F80F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8784CD1D2F7EC600F80F7E /* main.m */; };
@@ -40,6 +42,10 @@
 		DE3245991D30BCE200B3F7D5 /* UIColor+EGColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+EGColor.h"; sourceTree = "<group>"; };
 		DE32459A1D30BCE200B3F7D5 /* UIColor+EGColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+EGColor.m"; sourceTree = "<group>"; };
 		DE32459E1D30BDBD00B3F7D5 /* Default-568h@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x 2.png"; sourceTree = "<group>"; };
+		DE620B451D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+EGProcessDialog.h"; sourceTree = "<group>"; };
+		DE620B461D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+EGProcessDialog.m"; sourceTree = "<group>"; };
+		DE620B491D30C66B008C1EA9 /* NSString+EGStringExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EGStringExt.h"; sourceTree = "<group>"; };
+		DE620B4A1D30C66B008C1EA9 /* NSString+EGStringExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EGStringExt.m"; sourceTree = "<group>"; };
 		DE87849E1D2F7B4F00F80F7E /* easydeveloper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easydeveloper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8784BE1D2F7D6A00F80F7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DE8784BF1D2F7D6A00F80F7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -75,6 +81,24 @@
 				8A267262D2014C97BA1B2D53 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE620B441D30C52C008C1EA9 /* MBProgressHUDExt */ = {
+			isa = PBXGroup;
+			children = (
+				DE620B451D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.h */,
+				DE620B461D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m */,
+			);
+			path = MBProgressHUDExt;
+			sourceTree = "<group>";
+		};
+		DE620B481D30C64F008C1EA9 /* NSStringExt */ = {
+			isa = PBXGroup;
+			children = (
+				DE620B491D30C66B008C1EA9 /* NSString+EGStringExt.h */,
+				DE620B4A1D30C66B008C1EA9 /* NSString+EGStringExt.m */,
+			);
+			path = NSStringExt;
 			sourceTree = "<group>";
 		};
 		DE8784951D2F7B4F00F80F7E = {
@@ -173,6 +197,8 @@
 		DE8784C41D2F7D6A00F80F7E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DE620B481D30C64F008C1EA9 /* NSStringExt */,
+				DE620B441D30C52C008C1EA9 /* MBProgressHUDExt */,
 				DE8784CD1D2F7EC600F80F7E /* main.m */,
 				DE8784CA1D2F7EA000F80F7E /* AppDelegate.h */,
 				DE8784CB1D2F7EA000F80F7E /* AppDelegate.m */,
@@ -328,7 +354,9 @@
 				DE8784C71D2F7D6A00F80F7E /* ViewController.m in Sources */,
 				DE32458D1D30B60200B3F7D5 /* EGCoreViewController.m in Sources */,
 				DE32459B1D30BCE200B3F7D5 /* UIColor+EGColor.m in Sources */,
+				DE620B4B1D30C66B008C1EA9 /* NSString+EGStringExt.m in Sources */,
 				DE8784CE1D2F7EC600F80F7E /* main.m in Sources */,
+				DE620B471D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m in Sources */,
 				DE8784CC1D2F7EA000F80F7E /* AppDelegate.m in Sources */,
 				DE3245901D30B61900B3F7D5 /* EGTableViewController.m in Sources */,
 			);
