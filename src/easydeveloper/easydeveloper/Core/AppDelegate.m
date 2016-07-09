@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "EGWelcomeViewController.h"
+#import "EGMainNavController.h"
+#import "EGMainTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,8 +19,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
+    EGWelcomeViewController *welcome = [[EGWelcomeViewController alloc]init];
+    self.window.rootViewController=welcome;
+    [self.window makeKeyAndVisible];
+    [NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(removeWelcomPage) userInfo:nil repeats:NO];
     return YES;
+}
+
+
+
+-(void)removeWelcomPage{
+    EGMainTabBarController *tabRootViewController=[[EGMainTabBarController alloc]init];
+    EGMainNavController* root=[[EGMainNavController alloc]initWithRootViewController:tabRootViewController];
+    self.window.rootViewController=root;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

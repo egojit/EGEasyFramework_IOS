@@ -19,6 +19,10 @@
 		DE32459F1D30BDBD00B3F7D5 /* Default-568h@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = DE32459E1D30BDBD00B3F7D5 /* Default-568h@2x 2.png */; };
 		DE620B471D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B461D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m */; };
 		DE620B4B1D30C66B008C1EA9 /* NSString+EGStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B4A1D30C66B008C1EA9 /* NSString+EGStringExt.m */; };
+		DE620B4E1D30CCBF008C1EA9 /* EGWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B4D1D30CCBF008C1EA9 /* EGWelcomeViewController.m */; };
+		DE620B541D30CDE9008C1EA9 /* EGMainTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B531D30CDE9008C1EA9 /* EGMainTabBarController.m */; };
+		DE620B571D30CE1E008C1EA9 /* EGMainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B561D30CE1E008C1EA9 /* EGMainNavController.m */; };
+		DE620B5E1D30CF39008C1EA9 /* EGHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE620B5D1D30CF39008C1EA9 /* EGHomeController.m */; };
 		DE8784C71D2F7D6A00F80F7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8784BF1D2F7D6A00F80F7E /* ViewController.m */; };
 		DE8784CC1D2F7EA000F80F7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8784CB1D2F7EA000F80F7E /* AppDelegate.m */; };
 		DE8784CE1D2F7EC600F80F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8784CD1D2F7EC600F80F7E /* main.m */; };
@@ -46,6 +50,14 @@
 		DE620B461D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+EGProcessDialog.m"; sourceTree = "<group>"; };
 		DE620B491D30C66B008C1EA9 /* NSString+EGStringExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+EGStringExt.h"; sourceTree = "<group>"; };
 		DE620B4A1D30C66B008C1EA9 /* NSString+EGStringExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+EGStringExt.m"; sourceTree = "<group>"; };
+		DE620B4C1D30CCBF008C1EA9 /* EGWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGWelcomeViewController.h; sourceTree = "<group>"; };
+		DE620B4D1D30CCBF008C1EA9 /* EGWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGWelcomeViewController.m; sourceTree = "<group>"; };
+		DE620B521D30CDE9008C1EA9 /* EGMainTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMainTabBarController.h; sourceTree = "<group>"; };
+		DE620B531D30CDE9008C1EA9 /* EGMainTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMainTabBarController.m; sourceTree = "<group>"; };
+		DE620B551D30CE1E008C1EA9 /* EGMainNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGMainNavController.h; sourceTree = "<group>"; };
+		DE620B561D30CE1E008C1EA9 /* EGMainNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGMainNavController.m; sourceTree = "<group>"; };
+		DE620B5C1D30CF39008C1EA9 /* EGHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGHomeController.h; sourceTree = "<group>"; };
+		DE620B5D1D30CF39008C1EA9 /* EGHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGHomeController.m; sourceTree = "<group>"; };
 		DE87849E1D2F7B4F00F80F7E /* easydeveloper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easydeveloper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8784BE1D2F7D6A00F80F7E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		DE8784BF1D2F7D6A00F80F7E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -101,6 +113,39 @@
 			path = NSStringExt;
 			sourceTree = "<group>";
 		};
+		DE620B581D30CEFC008C1EA9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE620B591D30CEFC008C1EA9 /* Controllers */,
+				DE620B5A1D30CEFC008C1EA9 /* Models */,
+				DE620B5B1D30CEFC008C1EA9 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE620B591D30CEFC008C1EA9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE620B5C1D30CF39008C1EA9 /* EGHomeController.h */,
+				DE620B5D1D30CF39008C1EA9 /* EGHomeController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DE620B5A1D30CEFC008C1EA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DE620B5B1D30CEFC008C1EA9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DE8784951D2F7B4F00F80F7E = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +180,7 @@
 		DE8784BB1D2F7D6A00F80F7E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				DE620B581D30CEFC008C1EA9 /* Home */,
 				DE8784BC1D2F7D6A00F80F7E /* Main */,
 			);
 			path = App;
@@ -155,6 +201,12 @@
 			children = (
 				DE8784BE1D2F7D6A00F80F7E /* ViewController.h */,
 				DE8784BF1D2F7D6A00F80F7E /* ViewController.m */,
+				DE620B4C1D30CCBF008C1EA9 /* EGWelcomeViewController.h */,
+				DE620B4D1D30CCBF008C1EA9 /* EGWelcomeViewController.m */,
+				DE620B521D30CDE9008C1EA9 /* EGMainTabBarController.h */,
+				DE620B531D30CDE9008C1EA9 /* EGMainTabBarController.m */,
+				DE620B551D30CE1E008C1EA9 /* EGMainNavController.h */,
+				DE620B561D30CE1E008C1EA9 /* EGMainNavController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -351,14 +403,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE3245931D30B63D00B3F7D5 /* EGViewController.m in Sources */,
+				DE620B5E1D30CF39008C1EA9 /* EGHomeController.m in Sources */,
 				DE8784C71D2F7D6A00F80F7E /* ViewController.m in Sources */,
 				DE32458D1D30B60200B3F7D5 /* EGCoreViewController.m in Sources */,
 				DE32459B1D30BCE200B3F7D5 /* UIColor+EGColor.m in Sources */,
+				DE620B541D30CDE9008C1EA9 /* EGMainTabBarController.m in Sources */,
 				DE620B4B1D30C66B008C1EA9 /* NSString+EGStringExt.m in Sources */,
+				DE620B571D30CE1E008C1EA9 /* EGMainNavController.m in Sources */,
 				DE8784CE1D2F7EC600F80F7E /* main.m in Sources */,
 				DE620B471D30C553008C1EA9 /* MBProgressHUD+EGProcessDialog.m in Sources */,
 				DE8784CC1D2F7EA000F80F7E /* AppDelegate.m in Sources */,
 				DE3245901D30B61900B3F7D5 /* EGTableViewController.m in Sources */,
+				DE620B4E1D30CCBF008C1EA9 /* EGWelcomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

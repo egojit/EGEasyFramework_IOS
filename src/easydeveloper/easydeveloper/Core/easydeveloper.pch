@@ -17,10 +17,25 @@
 
 #define ScreenWidth  ([[UIScreen mainScreen] bounds].size.width)
 #define ScreenHeight ([[UIScreen mainScreen] bounds].size.height)
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#define iOS9 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define iOS8 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+#define iOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+
+
+#define isPad   (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad   ? YES : NO)
+#define isPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone ? YES : NO)
+#define isRetina ([[UIScreen mainScreen] scale] > 1 ? YES : NO)
 
 #define VIEW_BG  [UIColor whiteColor]//背景色配置
+#define APP_TITLE @"EasyFramework_IOS"
+//头部颜色
+#define TOP_COLOR 0x007457
+
+//底部颜色
+#define TAB_BG 0xf1f1f1
+
+#define TAB_SELECT_COLOR 0xf1f1f1
 
 
 #endif /* easydeveloper_pch */

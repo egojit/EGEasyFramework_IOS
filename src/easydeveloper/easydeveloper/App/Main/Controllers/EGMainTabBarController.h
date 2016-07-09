@@ -1,0 +1,13 @@
+//
+//  EGMainTabBarController.h
+//  easydeveloper
+//
+//  Created by egojit on 16/7/9.
+//  Copyright © 2016年 egojit. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface EGMainTabBarController : UITabBarController
+
+@end
