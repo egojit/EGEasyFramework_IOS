@@ -10,5 +10,6 @@
 #define app__bridging_header_h
 
 #import <AFNetworking.h>
-
+#import <MBProgressHUD.h>
+#import "MBProgressHUD+EGProcessDialog.h"
 #endif /* app__bridging_header_h */

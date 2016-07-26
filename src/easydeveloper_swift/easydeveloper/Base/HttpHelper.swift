@@ -22,7 +22,10 @@ class HttpHelper {
          strType.insert("text/json")
         strType.insert("text/javascript")
         strType.insert("text/plain")
-        manager.responseSerializer.acceptableContentTypes=strType;
+        manager.responseSerializer.acceptableContentTypes=strType
+        let args = Utils.getFormatUrlArgument(parameters)
+        LogUtil.i(nil, info: "\(url)?\(args)")
+        
         manager.POST(url, parameters: parameters, success:{  (operation: AFHTTPRequestOperation!,
             result: AnyObject!) in
             
@@ -40,26 +43,27 @@ class HttpHelper {
         
     }
     
-    static func Test(){
-        post("http://10.10.10.237:8080/SPSP-api/common/v1/tfCoordinate/thCategory", parameters: nil, onStart: onStart, onSuccess: Success ,onFaild: Faild)
-        
-    }
-   
-    
+//    static func Test(){
+//        let dic:Dictionary<String,String> = ["name":"egojit","age":"12"];
+//        post("http://10.10.10.237:8080/SPSP-api/common/v1/tfCoordinate/thCategory", parameters: dic, onStart: onStart, onSuccess: Success ,onFaild: Faild)
+//        
+//    }
+//   
 //    
-    static func onStart(){
-        print("======start")
-       
-    }
-
+////    
+//    static func onStart(){
+//        print("======start")
+//       
+//    }
 //
-    static func Success(result:String){
-        print(result)
-    }
-//
-    static func Faild(error:String){
-        print(error);
-    }
+////
+//    static func Success(result:String){
+//        print(result)
+//    }
+////
+//    static func Faild(error:String){
+//        print(error);
+//    }
 
     
 }

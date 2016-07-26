@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		71EBC6CE38999C1C0954DB29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E41EF95729312F34A32EF1 /* libPods.a */; };
 		DE6BD0751D409BD1009867F5 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BD0741D409BD1009867F5 /* HttpHelper.swift */; };
+		DECE5FEB1D472D4200EA0B2B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECE5FEA1D472D4200EA0B2B /* BaseViewController.swift */; };
+		DEF04F601D45F1370050C011 /* CoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F5F1D45F1370050C011 /* CoreController.swift */; };
+		DEF04F621D45F2000050C011 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F611D45F2000050C011 /* BaseTableViewController.swift */; };
+		DEF04F641D45F2730050C011 /* LogUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F631D45F2730050C011 /* LogUtil.swift */; };
+		DEF04F661D45F5350050C011 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F651D45F5350050C011 /* Utils.swift */; };
+		DEF04F681D45FCDB0050C011 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F671D45FCDB0050C011 /* StringExt.swift */; };
+		DEF04F6A1D45FF790050C011 /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F691D45FF790050C011 /* ProgressDialog.swift */; };
+		DEF04F731D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F721D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m */; };
 		DEF585D11D4095C6002B32E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF585C41D4095C6002B32E4 /* ViewController.swift */; };
 		DEF585D21D4095C6002B32E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF585C61D4095C6002B32E4 /* AppDelegate.swift */; };
 		DEF585D31D4095C6002B32E4 /* easyframework_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEF585C81D4095C6002B32E4 /* easyframework_swift.xcdatamodeld */; };
@@ -26,6 +34,15 @@
 		DE24C6C01D4070A000A6EB49 /* easydeveloper_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easydeveloper_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6BD0731D409A62009867F5 /* app_ bridging_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "app_ bridging_header.h"; sourceTree = "<group>"; };
 		DE6BD0741D409BD1009867F5 /* HttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+		DECE5FEA1D472D4200EA0B2B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		DEF04F5F1D45F1370050C011 /* CoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreController.swift; sourceTree = "<group>"; };
+		DEF04F611D45F2000050C011 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		DEF04F631D45F2730050C011 /* LogUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogUtil.swift; sourceTree = "<group>"; };
+		DEF04F651D45F5350050C011 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		DEF04F671D45FCDB0050C011 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		DEF04F691D45FF790050C011 /* ProgressDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
+		DEF04F711D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+EGProcessDialog.h"; sourceTree = "<group>"; };
+		DEF04F721D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+EGProcessDialog.m"; sourceTree = "<group>"; };
 		DEF585C41D4095C6002B32E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEF585C61D4095C6002B32E4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF585C91D4095C6002B32E4 /* easyframework_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = easyframework_swift.xcdatamodel; sourceTree = "<group>"; };
@@ -117,6 +134,9 @@
 			children = (
 				DEF585C61D4095C6002B32E4 /* AppDelegate.swift */,
 				DE6BD0741D409BD1009867F5 /* HttpHelper.swift */,
+				DEF04F5F1D45F1370050C011 /* CoreController.swift */,
+				DEF04F611D45F2000050C011 /* BaseTableViewController.swift */,
+				DECE5FEA1D472D4200EA0B2B /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -125,6 +145,12 @@
 			isa = PBXGroup;
 			children = (
 				DE6BD0731D409A62009867F5 /* app_ bridging_header.h */,
+				DEF04F631D45F2730050C011 /* LogUtil.swift */,
+				DEF04F651D45F5350050C011 /* Utils.swift */,
+				DEF04F671D45FCDB0050C011 /* StringExt.swift */,
+				DEF04F691D45FF790050C011 /* ProgressDialog.swift */,
+				DEF04F711D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.h */,
+				DEF04F721D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -264,10 +290,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF04F621D45F2000050C011 /* BaseTableViewController.swift in Sources */,
 				DEF585D21D4095C6002B32E4 /* AppDelegate.swift in Sources */,
 				DEF585D31D4095C6002B32E4 /* easyframework_swift.xcdatamodeld in Sources */,
+				DEF04F641D45F2730050C011 /* LogUtil.swift in Sources */,
+				DEF04F6A1D45FF790050C011 /* ProgressDialog.swift in Sources */,
+				DECE5FEB1D472D4200EA0B2B /* BaseViewController.swift in Sources */,
+				DEF04F681D45FCDB0050C011 /* StringExt.swift in Sources */,
+				DEF04F601D45F1370050C011 /* CoreController.swift in Sources */,
 				DEF585D11D4095C6002B32E4 /* ViewController.swift in Sources */,
 				DE6BD0751D409BD1009867F5 /* HttpHelper.swift in Sources */,
+				DEF04F731D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m in Sources */,
+				DEF04F661D45F5350050C011 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
