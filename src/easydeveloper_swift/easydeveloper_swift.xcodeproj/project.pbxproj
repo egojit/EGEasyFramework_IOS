@@ -16,7 +16,6 @@
 		DEF04F661D45F5350050C011 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F651D45F5350050C011 /* Utils.swift */; };
 		DEF04F681D45FCDB0050C011 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F671D45FCDB0050C011 /* StringExt.swift */; };
 		DEF04F6A1D45FF790050C011 /* ProgressDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F691D45FF790050C011 /* ProgressDialog.swift */; };
-		DEF04F731D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F721D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m */; };
 		DEF585D11D4095C6002B32E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF585C41D4095C6002B32E4 /* ViewController.swift */; };
 		DEF585D21D4095C6002B32E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF585C61D4095C6002B32E4 /* AppDelegate.swift */; };
 		DEF585D31D4095C6002B32E4 /* easyframework_swift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEF585C81D4095C6002B32E4 /* easyframework_swift.xcdatamodeld */; };
@@ -41,8 +40,6 @@
 		DEF04F651D45F5350050C011 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		DEF04F671D45FCDB0050C011 /* StringExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		DEF04F691D45FF790050C011 /* ProgressDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressDialog.swift; sourceTree = "<group>"; };
-		DEF04F711D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+EGProcessDialog.h"; sourceTree = "<group>"; };
-		DEF04F721D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+EGProcessDialog.m"; sourceTree = "<group>"; };
 		DEF585C41D4095C6002B32E4 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DEF585C61D4095C6002B32E4 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF585C91D4095C6002B32E4 /* easyframework_swift.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = easyframework_swift.xcdatamodel; sourceTree = "<group>"; };
@@ -101,6 +98,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DECE5FEC1D4766CF00EA0B2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DEF585C11D4095C6002B32E4 /* easydeveloper */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,13 +148,12 @@
 		DEF585C71D4095C6002B32E4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				DECE5FEC1D4766CF00EA0B2B /* Views */,
 				DE6BD0731D409A62009867F5 /* app_ bridging_header.h */,
 				DEF04F631D45F2730050C011 /* LogUtil.swift */,
 				DEF04F651D45F5350050C011 /* Utils.swift */,
 				DEF04F671D45FCDB0050C011 /* StringExt.swift */,
 				DEF04F691D45FF790050C011 /* ProgressDialog.swift */,
-				DEF04F711D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.h */,
-				DEF04F721D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -300,7 +303,6 @@
 				DEF04F601D45F1370050C011 /* CoreController.swift in Sources */,
 				DEF585D11D4095C6002B32E4 /* ViewController.swift in Sources */,
 				DE6BD0751D409BD1009867F5 /* HttpHelper.swift in Sources */,
-				DEF04F731D4610DB0050C011 /* MBProgressHUD+EGProcessDialog.m in Sources */,
 				DEF04F661D45F5350050C011 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

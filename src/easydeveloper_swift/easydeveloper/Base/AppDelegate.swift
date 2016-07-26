@@ -13,10 +13,22 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var navController:UINavigationController?;
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        let tabBarConrolller:UITabBarController = UITabBarController();
+        let viewController1 = ViewController();
+        viewController1.tabBarItem.title="首页"
+        
+        let viewController2 = UIViewController();
+        viewController2.tabBarItem.title="消息"
+        
+        tabBarConrolller.viewControllers=[viewController1 , viewController2];
+        
+        navController=UINavigationController(rootViewController: tabBarConrolller)
+        self.window?.rootViewController=navController;
+        self.window?.makeKeyAndVisible()
         return true
     }
 

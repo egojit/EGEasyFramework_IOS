@@ -11,10 +11,10 @@ import UIKit
 class ViewController: BaseTableViewContrller {
     
     
-    let list:[Dictionary<String,AnyObject>] = [["name":"gaolu","age":11],["name":"gaolu","age":11]]
+    let list:[Dictionary<String,AnyObject>] = [["name":"gaolu","age":11],["name":"egojit","age":11]]
     
     override func viewDidLoad() {
-        super.viewDidLoad("\(object_getClassName(self))")
+        super.viewDidLoad("ViewController")
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,15 +28,14 @@ class ViewController: BaseTableViewContrller {
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(animated)
+          Test()
         self.setData(list)
-        
         LogUtil.i(nil, info: "\(object_getClassName(self))")
-        Test()
+      
     }
 
     //实现了数据源协议
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        
         var cell:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId,forIndexPath: indexPath) as UITableViewCell
         if cell == nil{
             cell=UITableViewCell(frame: CGRect(x: 0, y: 0, width: view!.frame.width, height: 50))
@@ -51,7 +50,7 @@ class ViewController: BaseTableViewContrller {
     func Test(){
         let dic:Dictionary<String,String> = ["name":"egojit","age":"12"];
 //        self.showSuccessMessage("开始！");
-       self.showLoding("加载中……")
+        
         
         HttpHelper.post("http://10.10.10.237:8080/SPSP-api/common/v1/tfCoordinate/thCategory", parameters: dic, onStart: onStart, onSuccess: Success ,onFaild: Faild)
         
@@ -61,16 +60,17 @@ class ViewController: BaseTableViewContrller {
     //
     func onStart(){
         print("======start")
-        
+//         self.showLoding("加载中……")
        
         
     }
     
     //
     func Success(result:String){
-        print(result)
 //         self.showSuccessMessage("成功！");
 //         self.showLoding("加载中……")
+        self.hideLoding()
+       
     }
     //
     func Faild(error:String){
