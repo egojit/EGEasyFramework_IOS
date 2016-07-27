@@ -7,11 +7,14 @@
 //
 
 #import "EGMainTabBarController.h"
+#import "ViewController.h"
 
 @implementation EGMainTabBarController
 
 //初始化控制器
 -(void)initControllers{
-    
+    ViewController * viewController=[[ViewController alloc]init];
+    NSArray* controllers=@[viewController];
+    self.viewControllers=controllers;
 }
 @end

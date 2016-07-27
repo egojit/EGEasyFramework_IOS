@@ -1,0 +1,309 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CoreController"
+provides-nominal:
+- "C19easydeveloper_swift14CoreController"
+provides-member:
+- ["C19easydeveloper_swift14CoreController", ""]
+provides-dynamic-lookup:
+- "hideLoding"
+- "showLoding"
+- "showErrorsMessage"
+- "showSuccessMessage"
+- "viewDidLoad"
+depends-top-level:
+- !private "ProgressDialog"
+- !private "LogUtil"
+- "String"
+- !private "StringLiteralType"
+- "UIViewController"
+- "CoreController"
+depends-member:
+- !private ["PSs9AnyObject", "LogUtil"]
+- !private ["PSs9AnyObject", "ProgressDialog"]
+- !private ["PSs9AnyObject", "hideHUD"]
+- ["PSs9AnyObject", "hideLoding"]
+- !private ["PSs9AnyObject", "i"]
+- ["PSs9AnyObject", "init"]
+- !private ["PSs9AnyObject", "showError"]
+- ["PSs9AnyObject", "showErrorsMessage"]
+- ["PSs9AnyObject", "showLoding"]
+- !private ["PSs9AnyObject", "showMessage"]
+- !private ["PSs9AnyObject", "showSuccess"]
+- ["PSs9AnyObject", "showSuccessMessage"]
+- ["PSs9AnyObject", "viewDidLoad"]
+- ["PSs9AnyObject", ""]
+- !private ["PSs11CVarArgType", "LogUtil"]
+- !private ["PSs11CVarArgType", "ProgressDialog"]
+- !private ["PSs11CVarArgType", "hideHUD"]
+- ["PSs11CVarArgType", "hideLoding"]
+- ["PSs11CVarArgType", "init"]
+- !private ["PSs11CVarArgType", "showError"]
+- ["PSs11CVarArgType", "showErrorsMessage"]
+- ["PSs11CVarArgType", "showLoding"]
+- !private ["PSs11CVarArgType", "showMessage"]
+- !private ["PSs11CVarArgType", "showSuccess"]
+- ["PSs11CVarArgType", "showSuccessMessage"]
+- ["PSs11CVarArgType", "viewDidLoad"]
+- ["PSs11CVarArgType", ""]
+- !private ["C19easydeveloper_swift14CoreController", "LogUtil"]
+- !private ["C19easydeveloper_swift14CoreController", "ProgressDialog"]
+- ["C19easydeveloper_swift14CoreController", "String"]
+- ["C19easydeveloper_swift14CoreController", "deinit"]
+- ["C19easydeveloper_swift14CoreController", "hideLoding"]
+- ["C19easydeveloper_swift14CoreController", "init"]
+- ["C19easydeveloper_swift14CoreController", "showErrorsMessage"]
+- ["C19easydeveloper_swift14CoreController", "showLoding"]
+- ["C19easydeveloper_swift14CoreController", "showSuccessMessage"]
+- ["C19easydeveloper_swift14CoreController", "viewDidLoad"]
+- !private ["PSs23CustomStringConvertible", "LogUtil"]
+- !private ["PSs23CustomStringConvertible", "ProgressDialog"]
+- !private ["PSs23CustomStringConvertible", "hideHUD"]
+- ["PSs23CustomStringConvertible", "hideLoding"]
+- ["PSs23CustomStringConvertible", "init"]
+- !private ["PSs23CustomStringConvertible", "showError"]
+- ["PSs23CustomStringConvertible", "showErrorsMessage"]
+- ["PSs23CustomStringConvertible", "showLoding"]
+- !private ["PSs23CustomStringConvertible", "showMessage"]
+- !private ["PSs23CustomStringConvertible", "showSuccess"]
+- ["PSs23CustomStringConvertible", "showSuccessMessage"]
+- ["PSs23CustomStringConvertible", "viewDidLoad"]
+- ["PSs23CustomStringConvertible", ""]
+- !private ["PSs9Equatable", "LogUtil"]
+- !private ["PSs9Equatable", "ProgressDialog"]
+- !private ["PSs9Equatable", "hideHUD"]
+- ["PSs9Equatable", "hideLoding"]
+- ["PSs9Equatable", "init"]
+- !private ["PSs9Equatable", "showError"]
+- ["PSs9Equatable", "showErrorsMessage"]
+- ["PSs9Equatable", "showLoding"]
+- !private ["PSs9Equatable", "showMessage"]
+- !private ["PSs9Equatable", "showSuccess"]
+- ["PSs9Equatable", "showSuccessMessage"]
+- ["PSs9Equatable", "viewDidLoad"]
+- ["PSs9Equatable", ""]
+- !private ["PSs8Hashable", "LogUtil"]
+- !private ["PSs8Hashable", "ProgressDialog"]
+- !private ["PSs8Hashable", "hideHUD"]
+- ["PSs8Hashable", "hideLoding"]
+- ["PSs8Hashable", "init"]
+- !private ["PSs8Hashable", "showError"]
+- ["PSs8Hashable", "showErrorsMessage"]
+- ["PSs8Hashable", "showLoding"]
+- !private ["PSs8Hashable", "showMessage"]
+- !private ["PSs8Hashable", "showSuccess"]
+- ["PSs8Hashable", "showSuccessMessage"]
+- ["PSs8Hashable", "viewDidLoad"]
+- ["PSs8Hashable", ""]
+- !private ["C19easydeveloper_swift7LogUtil", "i"]
+- !private ["CSo13MBProgressHUD", "hideHUD"]
+- !private ["CSo13MBProgressHUD", "showError"]
+- !private ["CSo13MBProgressHUD", "showMessage"]
+- !private ["CSo13MBProgressHUD", "showSuccess"]
+- !private ["PSo8NSCoding", "LogUtil"]
+- !private ["PSo8NSCoding", "ProgressDialog"]
+- !private ["PSo8NSCoding", "hideHUD"]
+- ["PSo8NSCoding", "hideLoding"]
+- ["PSo8NSCoding", "init"]
+- !private ["PSo8NSCoding", "showError"]
+- ["PSo8NSCoding", "showErrorsMessage"]
+- ["PSo8NSCoding", "showLoding"]
+- !private ["PSo8NSCoding", "showMessage"]
+- !private ["PSo8NSCoding", "showSuccess"]
+- ["PSo8NSCoding", "showSuccessMessage"]
+- ["PSo8NSCoding", "viewDidLoad"]
+- ["PSo8NSCoding", ""]
+- !private ["PSo26NSExtensionRequestHandling", "LogUtil"]
+- !private ["PSo26NSExtensionRequestHandling", "ProgressDialog"]
+- ["PSo26NSExtensionRequestHandling", "hideLoding"]
+- ["PSo26NSExtensionRequestHandling", "init"]
+- ["PSo26NSExtensionRequestHandling", "showErrorsMessage"]
+- ["PSo26NSExtensionRequestHandling", "showLoding"]
+- ["PSo26NSExtensionRequestHandling", "showSuccessMessage"]
+- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
+- ["PSo26NSExtensionRequestHandling", ""]
+- !private ["CSo8NSObject", "LogUtil"]
+- !private ["CSo8NSObject", "ProgressDialog"]
+- ["CSo8NSObject", "String"]
+- !private ["CSo8NSObject", "hideHUD"]
+- ["CSo8NSObject", "hideLoding"]
+- ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "showError"]
+- ["CSo8NSObject", "showErrorsMessage"]
+- ["CSo8NSObject", "showLoding"]
+- !private ["CSo8NSObject", "showMessage"]
+- !private ["CSo8NSObject", "showSuccess"]
+- ["CSo8NSObject", "showSuccessMessage"]
+- ["CSo8NSObject", "viewDidLoad"]
+- !private ["PSo16NSObjectProtocol", "LogUtil"]
+- !private ["PSo16NSObjectProtocol", "ProgressDialog"]
+- !private ["PSo16NSObjectProtocol", "hideHUD"]
+- ["PSo16NSObjectProtocol", "hideLoding"]
+- ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "showError"]
+- ["PSo16NSObjectProtocol", "showErrorsMessage"]
+- ["PSo16NSObjectProtocol", "showLoding"]
+- !private ["PSo16NSObjectProtocol", "showMessage"]
+- !private ["PSo16NSObjectProtocol", "showSuccess"]
+- ["PSo16NSObjectProtocol", "showSuccessMessage"]
+- ["PSo16NSObjectProtocol", "viewDidLoad"]
+- ["PSo16NSObjectProtocol", ""]
+- !private ["C19easydeveloper_swift14ProgressDialog", "hideHUD"]
+- !private ["C19easydeveloper_swift14ProgressDialog", "showError"]
+- !private ["C19easydeveloper_swift14ProgressDialog", "showMessage"]
+- !private ["C19easydeveloper_swift14ProgressDialog", "showSuccess"]
+- !private ["PSo29UIAccessibilityIdentification", "hideHUD"]
+- !private ["PSo29UIAccessibilityIdentification", "showError"]
+- !private ["PSo29UIAccessibilityIdentification", "showMessage"]
+- !private ["PSo29UIAccessibilityIdentification", "showSuccess"]
+- !private ["PSo12UIAppearance", "hideHUD"]
+- !private ["PSo12UIAppearance", "showError"]
+- !private ["PSo12UIAppearance", "showMessage"]
+- !private ["PSo12UIAppearance", "showSuccess"]
+- !private ["PSo21UIAppearanceContainer", "LogUtil"]
+- !private ["PSo21UIAppearanceContainer", "ProgressDialog"]
+- !private ["PSo21UIAppearanceContainer", "hideHUD"]
+- ["PSo21UIAppearanceContainer", "hideLoding"]
+- ["PSo21UIAppearanceContainer", "init"]
+- !private ["PSo21UIAppearanceContainer", "showError"]
+- ["PSo21UIAppearanceContainer", "showErrorsMessage"]
+- ["PSo21UIAppearanceContainer", "showLoding"]
+- !private ["PSo21UIAppearanceContainer", "showMessage"]
+- !private ["PSo21UIAppearanceContainer", "showSuccess"]
+- ["PSo21UIAppearanceContainer", "showSuccessMessage"]
+- ["PSo21UIAppearanceContainer", "viewDidLoad"]
+- ["PSo21UIAppearanceContainer", ""]
+- !private ["PSo18UIContentContainer", "LogUtil"]
+- !private ["PSo18UIContentContainer", "ProgressDialog"]
+- ["PSo18UIContentContainer", "hideLoding"]
+- ["PSo18UIContentContainer", "init"]
+- ["PSo18UIContentContainer", "showErrorsMessage"]
+- ["PSo18UIContentContainer", "showLoding"]
+- ["PSo18UIContentContainer", "showSuccessMessage"]
+- ["PSo18UIContentContainer", "viewDidLoad"]
+- ["PSo18UIContentContainer", ""]
+- !private ["PSo17UICoordinateSpace", "hideHUD"]
+- !private ["PSo17UICoordinateSpace", "showError"]
+- !private ["PSo17UICoordinateSpace", "showMessage"]
+- !private ["PSo17UICoordinateSpace", "showSuccess"]
+- !private ["PSo13UIDynamicItem", "hideHUD"]
+- !private ["PSo13UIDynamicItem", "showError"]
+- !private ["PSo13UIDynamicItem", "showMessage"]
+- !private ["PSo13UIDynamicItem", "showSuccess"]
+- !private ["PSo18UIFocusEnvironment", "LogUtil"]
+- !private ["PSo18UIFocusEnvironment", "ProgressDialog"]
+- !private ["PSo18UIFocusEnvironment", "hideHUD"]
+- ["PSo18UIFocusEnvironment", "hideLoding"]
+- ["PSo18UIFocusEnvironment", "init"]
+- !private ["PSo18UIFocusEnvironment", "showError"]
+- ["PSo18UIFocusEnvironment", "showErrorsMessage"]
+- ["PSo18UIFocusEnvironment", "showLoding"]
+- !private ["PSo18UIFocusEnvironment", "showMessage"]
+- !private ["PSo18UIFocusEnvironment", "showSuccess"]
+- ["PSo18UIFocusEnvironment", "showSuccessMessage"]
+- ["PSo18UIFocusEnvironment", "viewDidLoad"]
+- ["PSo18UIFocusEnvironment", ""]
+- !private ["CSo11UIResponder", "LogUtil"]
+- !private ["CSo11UIResponder", "ProgressDialog"]
+- ["CSo11UIResponder", "String"]
+- !private ["CSo11UIResponder", "hideHUD"]
+- ["CSo11UIResponder", "hideLoding"]
+- ["CSo11UIResponder", "init"]
+- !private ["CSo11UIResponder", "showError"]
+- ["CSo11UIResponder", "showErrorsMessage"]
+- ["CSo11UIResponder", "showLoding"]
+- !private ["CSo11UIResponder", "showMessage"]
+- !private ["CSo11UIResponder", "showSuccess"]
+- ["CSo11UIResponder", "showSuccessMessage"]
+- ["CSo11UIResponder", "viewDidLoad"]
+- !private ["PSo16UIStateRestoring", "LogUtil"]
+- !private ["PSo16UIStateRestoring", "ProgressDialog"]
+- ["PSo16UIStateRestoring", "hideLoding"]
+- ["PSo16UIStateRestoring", "init"]
+- ["PSo16UIStateRestoring", "showErrorsMessage"]
+- ["PSo16UIStateRestoring", "showLoding"]
+- ["PSo16UIStateRestoring", "showSuccessMessage"]
+- ["PSo16UIStateRestoring", "viewDidLoad"]
+- ["PSo16UIStateRestoring", ""]
+- !private ["PSo18UITraitEnvironment", "LogUtil"]
+- !private ["PSo18UITraitEnvironment", "ProgressDialog"]
+- !private ["PSo18UITraitEnvironment", "hideHUD"]
+- ["PSo18UITraitEnvironment", "hideLoding"]
+- ["PSo18UITraitEnvironment", "init"]
+- !private ["PSo18UITraitEnvironment", "showError"]
+- ["PSo18UITraitEnvironment", "showErrorsMessage"]
+- ["PSo18UITraitEnvironment", "showLoding"]
+- !private ["PSo18UITraitEnvironment", "showMessage"]
+- !private ["PSo18UITraitEnvironment", "showSuccess"]
+- ["PSo18UITraitEnvironment", "showSuccessMessage"]
+- ["PSo18UITraitEnvironment", "viewDidLoad"]
+- ["PSo18UITraitEnvironment", ""]
+- !private ["CSo6UIView", "hideHUD"]
+- !private ["CSo6UIView", "showError"]
+- !private ["CSo6UIView", "showMessage"]
+- !private ["CSo6UIView", "showSuccess"]
+- !private ["CSo16UIViewController", "LogUtil"]
+- !private ["CSo16UIViewController", "ProgressDialog"]
+- ["CSo16UIViewController", "String"]
+- ["CSo16UIViewController", "hideLoding"]
+- ["CSo16UIViewController", "init"]
+- ["CSo16UIViewController", "showErrorsMessage"]
+- ["CSo16UIViewController", "showLoding"]
+- ["CSo16UIViewController", "showSuccessMessage"]
+- ["CSo16UIViewController", "viewDidLoad"]
+- ["CSo16UIViewController", ""]
+- !private ["PSs12_Reflectable", "hideHUD"]
+- !private ["PSs12_Reflectable", "showError"]
+- !private ["PSs12_Reflectable", "showMessage"]
+- !private ["PSs12_Reflectable", "showSuccess"]
+depends-nominal:
+- "PSs9AnyObject"
+- "PSs11CVarArgType"
+- "C19easydeveloper_swift14CoreController"
+- "PSs23CustomStringConvertible"
+- "PSs9Equatable"
+- "PSs8Hashable"
+- !private "C19easydeveloper_swift7LogUtil"
+- !private "CSo13MBProgressHUD"
+- "PSo8NSCoding"
+- "PSo26NSExtensionRequestHandling"
+- "CSo8NSObject"
+- "PSo16NSObjectProtocol"
+- !private "C19easydeveloper_swift14ProgressDialog"
+- !private "PSo29UIAccessibilityIdentification"
+- !private "PSo12UIAppearance"
+- "PSo21UIAppearanceContainer"
+- "PSo18UIContentContainer"
+- !private "PSo17UICoordinateSpace"
+- !private "PSo13UIDynamicItem"
+- "PSo18UIFocusEnvironment"
+- "CSo11UIResponder"
+- "PSo16UIStateRestoring"
+- "PSo18UITraitEnvironment"
+- !private "CSo6UIView"
+- "CSo16UIViewController"
+- !private "PSs12_Reflectable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Core/app_ bridging_header.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFNetworking.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLRequestSerialization.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLResponseSerialization.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFSecurityPolicy.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFNetworkReachabilityManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLConnectionOperation.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFHTTPRequestOperation.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFHTTPRequestOperationManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLSessionManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFHTTPSessionManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/MBProgressHUD/MBProgressHUD.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "e9b4bd42917e2e6b867f6fc5cd815db8"
