@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D47D22177F9052DD027B5EF /* libPods-easydeveloper_swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A47696BB250732E9A5A9FDC0 /* libPods-easydeveloper_swift.a */; };
-		71EBC6CE38999C1C0954DB29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E41EF95729312F34A32EF1 /* libPods.a */; };
+		1EAC99EAB23461A8863752CC /* libPods-easydeveloper_swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A47696BB250732E9A5A9FDC0 /* libPods-easydeveloper_swift.a */; };
 		DE6BD0751D409BD1009867F5 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BD0741D409BD1009867F5 /* HttpHelper.swift */; };
 		DECE5FEB1D472D4200EA0B2B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECE5FEA1D472D4200EA0B2B /* BaseViewController.swift */; };
 		DEF04F601D45F1370050C011 /* CoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F5F1D45F1370050C011 /* CoreController.swift */; };
@@ -59,8 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71EBC6CE38999C1C0954DB29 /* libPods.a in Frameworks */,
-				0D47D22177F9052DD027B5EF /* libPods-easydeveloper_swift.a in Frameworks */,
+				1EAC99EAB23461A8863752CC /* libPods-easydeveloper_swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,12 +182,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE24C6D51D4070A000A6EB49 /* Build configuration list for PBXNativeTarget "easydeveloper_swift" */;
 			buildPhases = (
+				9340C07127B6F185E6D59F83 /* Check Pods Manifest.lock */,
 				0FB2B48F8FCAF1CB7D93FE87 /* [CP] Check Pods Manifest.lock */,
 				DE24C6BC1D4070A000A6EB49 /* Sources */,
 				DE24C6BD1D4070A000A6EB49 /* Frameworks */,
 				DE24C6BE1D4070A000A6EB49 /* Resources */,
 				65E9E0CF5BDE0469FE6E05E3 /* [CP] Embed Pods Frameworks */,
 				4156F64649934AFEE0F8E124 /* [CP] Copy Pods Resources */,
+				CB4642DF112A1A6660763AD6 /* Embed Pods Frameworks */,
+				CDE5B952FFEFFF417EC59CD3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,6 +293,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easydeveloper_swift/Pods-easydeveloper_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9340C07127B6F185E6D59F83 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB4642DF112A1A6660763AD6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easydeveloper_swift/Pods-easydeveloper_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE5B952FFEFFF417EC59CD3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easydeveloper_swift/Pods-easydeveloper_swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
