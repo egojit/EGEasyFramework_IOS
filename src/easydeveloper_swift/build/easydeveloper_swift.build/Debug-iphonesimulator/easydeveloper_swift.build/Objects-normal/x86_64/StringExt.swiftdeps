@@ -1,0 +1,173 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+provides-nominal:
+provides-member:
+- ["SS", ""]
+- ["SS", "length"]
+provides-dynamic-lookup:
+depends-top-level:
+- "Int"
+- "String"
+depends-member:
+- !private ["PSs9AnyObject", "characters"]
+- !private ["PSs22BidirectionalIndexType", "Distance"]
+- !private ["PSs22BidirectionalIndexType", "IntegerLiteralType"]
+- !private ["PSs21BitwiseOperationsType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "IntegerLiteralType"]
+- !private ["PSs11CVarArgType", "characters"]
+- !private ["VSS13CharacterView", "Generator"]
+- !private ["VSS13CharacterView", "Index"]
+- !private ["VSS13CharacterView", "SubSequence"]
+- !private ["VSS13CharacterView", "count"]
+- !private ["PSs14CollectionType", "Generator"]
+- !private ["PSs14CollectionType", "Index"]
+- !private ["PSs14CollectionType", "SubSequence"]
+- !private ["PSs14CollectionType", "count"]
+- !private ["PSs10Comparable", "Distance"]
+- !private ["PSs10Comparable", "IntegerLiteralType"]
+- !private ["PSs10Comparable", "characters"]
+- !private ["PSs28CustomDebugStringConvertible", "characters"]
+- !private ["PSs23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["PSs23CustomStringConvertible", "characters"]
+- !private ["PSs9Equatable", "Distance"]
+- !private ["PSs9Equatable", "IntegerLiteralType"]
+- !private ["PSs9Equatable", "characters"]
+- !private ["PSs41ExtendedGraphemeClusterLiteralConvertible", "characters"]
+- !private ["PSs16ForwardIndexType", "Distance"]
+- !private ["PSs16ForwardIndexType", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "IntegerLiteralType"]
+- !private ["PSs8Hashable", "characters"]
+- !private ["VVSS13CharacterView5Index", "Distance"]
+- !private ["PSs9Indexable", "Generator"]
+- !private ["PSs9Indexable", "Index"]
+- !private ["PSs9Indexable", "SubSequence"]
+- !private ["PSs9Indexable", "count"]
+- !private ["Si", "IntegerLiteralType"]
+- !private ["PSs21IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs25IntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs11IntegerType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "IntegerLiteralType"]
+- !private ["PSs14MirrorPathType", "characters"]
+- !private ["PSo8NSCoding", "characters"]
+- !private ["PSo9NSCopying", "characters"]
+- !private ["PSo16NSMutableCopying", "characters"]
+- !private ["CSo8NSObject", "characters"]
+- !private ["PSo16NSObjectProtocol", "characters"]
+- !private ["PSo14NSSecureCoding", "characters"]
+- !private ["CSo8NSString", "characters"]
+- !private ["PSs16OutputStreamType", "characters"]
+- !private ["PSs21RandomAccessIndexType", "IntegerLiteralType"]
+- !private ["PSs30RangeReplaceableCollectionType", "Generator"]
+- !private ["PSs30RangeReplaceableCollectionType", "Index"]
+- !private ["PSs30RangeReplaceableCollectionType", "SubSequence"]
+- !private ["PSs30RangeReplaceableCollectionType", "count"]
+- !private ["PSs12SequenceType", "Generator"]
+- !private ["PSs12SequenceType", "Index"]
+- !private ["PSs12SequenceType", "SubSequence"]
+- !private ["PSs12SequenceType", "count"]
+- !private ["PSs17SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs16SignedNumberType", "IntegerLiteralType"]
+- !private ["PSs10Streamable", "characters"]
+- !private ["PSs10Strideable", "IntegerLiteralType"]
+- ["SS", "Int"]
+- !private ["SS", "characters"]
+- ["SS", "length"]
+- !private ["PSs30StringInterpolationConvertible", "characters"]
+- !private ["PSs24StringLiteralConvertible", "characters"]
+- !private ["PSs31UnicodeScalarLiteralConvertible", "characters"]
+- !private ["PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible", "characters"]
+- !private ["PSs33_BuiltinIntegerLiteralConvertible", "IntegerLiteralType"]
+- !private ["PSs32_BuiltinStringLiteralConvertible", "characters"]
+- !private ["PSs37_BuiltinUTF16StringLiteralConvertible", "characters"]
+- !private ["PSs39_BuiltinUnicodeScalarLiteralConvertible", "characters"]
+- !private ["PSs16_CocoaStringType", "characters"]
+- !private ["PSs14_Incrementable", "Distance"]
+- !private ["PSs14_Incrementable", "IntegerLiteralType"]
+- !private ["PSs22_IntegerArithmeticType", "IntegerLiteralType"]
+- !private ["PSs12_IntegerType", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["PSs21_ObjectiveCBridgeable", "characters"]
+- !private ["PSs22_RandomAccessAmbiguity", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "Distance"]
+- !private ["PSs12_Reflectable", "IntegerLiteralType"]
+- !private ["PSs12_Reflectable", "characters"]
+- !private ["PSs18_SignedIntegerType", "IntegerLiteralType"]
+- !private ["PSs11_Strideable", "IntegerLiteralType"]
+depends-nominal:
+- !private "PSs9AnyObject"
+- !private "PSs22BidirectionalIndexType"
+- !private "PSs21BitwiseOperationsType"
+- !private "PSs11CVarArgType"
+- !private "VSS13CharacterView"
+- !private "PSs14CollectionType"
+- !private "PSs10Comparable"
+- !private "PSs28CustomDebugStringConvertible"
+- !private "PSs23CustomStringConvertible"
+- !private "PSs9Equatable"
+- !private "PSs41ExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs16ForwardIndexType"
+- !private "PSs8Hashable"
+- !private "VVSS13CharacterView5Index"
+- !private "PSs9Indexable"
+- !private "Si"
+- !private "PSs21IntegerArithmeticType"
+- !private "PSs25IntegerLiteralConvertible"
+- !private "PSs11IntegerType"
+- !private "PSs14MirrorPathType"
+- !private "PSo8NSCoding"
+- !private "PSo9NSCopying"
+- !private "PSo16NSMutableCopying"
+- !private "CSo8NSObject"
+- !private "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
+- !private "PSs16OutputStreamType"
+- !private "PSs21RandomAccessIndexType"
+- !private "PSs30RangeReplaceableCollectionType"
+- !private "PSs12SequenceType"
+- !private "PSs17SignedIntegerType"
+- !private "PSs16SignedNumberType"
+- !private "PSs10Streamable"
+- !private "PSs10Strideable"
+- "SS"
+- !private "PSs30StringInterpolationConvertible"
+- !private "PSs24StringLiteralConvertible"
+- !private "PSs31UnicodeScalarLiteralConvertible"
+- !private "PSs49_BuiltinExtendedGraphemeClusterLiteralConvertible"
+- !private "PSs33_BuiltinIntegerLiteralConvertible"
+- !private "PSs32_BuiltinStringLiteralConvertible"
+- !private "PSs37_BuiltinUTF16StringLiteralConvertible"
+- !private "PSs39_BuiltinUnicodeScalarLiteralConvertible"
+- !private "PSs16_CocoaStringType"
+- !private "PSs14_Incrementable"
+- !private "PSs22_IntegerArithmeticType"
+- !private "PSs12_IntegerType"
+- !private "PSs21_ObjectiveCBridgeable"
+- !private "PSs22_RandomAccessAmbiguity"
+- !private "PSs12_Reflectable"
+- !private "PSs18_SignedIntegerType"
+- !private "PSs11_Strideable"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Core/app_ bridging_header.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFNetworking.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLRequestSerialization.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLResponseSerialization.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFSecurityPolicy.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFNetworkReachabilityManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLConnectionOperation.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFHTTPRequestOperation.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFHTTPRequestOperationManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFURLSessionManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/AFNetworking/AFHTTPSessionManager.h"
+- "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/Pods/Headers/Public/MBProgressHUD/MBProgressHUD.h"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+interface-hash: "42f543c93f12bc5c50cf7f7586af513a"

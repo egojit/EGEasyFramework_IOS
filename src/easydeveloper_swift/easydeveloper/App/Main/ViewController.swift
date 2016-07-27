@@ -25,7 +25,7 @@ class ViewController: BaseTableViewContrller {
         super.viewDidAppear(animated)
           Test()
         self.setData(list)
-//        LogUtil.i(nil, info: "\(object_getClassName(self))")
+        LogUtil.i(nil, info: "\(object_getClassName(self))")
       
     }
 

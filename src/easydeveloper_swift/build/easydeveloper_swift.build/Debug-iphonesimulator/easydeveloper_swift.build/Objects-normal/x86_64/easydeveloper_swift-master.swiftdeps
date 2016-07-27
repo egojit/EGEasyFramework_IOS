@@ -1,0 +1,14 @@
+version: "Apple Swift version 2.1.1 (swiftlang-700.1.101.15 clang-700.1.81)"
+options: "0b6844a4183cfdfcd656c19527554795"
+build_time: [522903046, 762151000]
+inputs:
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Core/Utils.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Base/BaseViewController.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Core/LogUtil.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Base/CoreController.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Core/StringExt.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Base/BaseTableViewController.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Core/ProgressDialog.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Base/HttpHelper.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/App/Main/ViewController.swift": [522903042, 0]
+  "/Users/xhbapple/Desktop/EGEasyFramework_IOS/src/easydeveloper_swift/easydeveloper/Base/AppDelegate.swift": [522903042, 0]
