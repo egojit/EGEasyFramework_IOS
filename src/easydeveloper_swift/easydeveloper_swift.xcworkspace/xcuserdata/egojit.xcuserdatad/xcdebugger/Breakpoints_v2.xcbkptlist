@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "easydeveloper/Libs/Views/ListView.swift"
-            timestampString = "491382215.684298"
+            timestampString = "491383104.512962"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "init(coder:)"
             landmarkType = "5">
          </BreakpointContent>

@@ -33,18 +33,20 @@ class ViewController: BaseTableViewContrller {
             let dic:Dictionary<String,AnyObject>=self.list[row];
             cellMid!.textLabel?.text = dic["name"] as? String;
             return cellMid!;
-
         }
+//        self.tableView.setRefeshEnable(true);
+        
         self.tableView.setOnItemClick { (indexPath) -> () in
              LogUtil.i(nil,info: "点击行\(indexPath.row)")
         }
+        
+        
+        
       
     }
     
     func Test(){
         let dic:Dictionary<String,String> = ["name":"egojit","age":"12"];
-//        self.showSuccessMessage("开始！");
-        
         
         HttpHelper.post("http://10.10.10.237:8080/SPSP-api/common/v1/tfCoordinate/thCategory", parameters: dic, onStart: onStart, onSuccess: Success ,onFaild: Faild)
         

@@ -23,7 +23,9 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
     
     var tableViewOpr:((tableView: UITableView, indexPath: NSIndexPath,cell:UITableViewCell?)->UITableViewCell)?
     
-    var cellClick:((indexPath:NSIndexPath)->())?
+    var itemClick:((indexPath:NSIndexPath)->())?
+    
+     var itemHeight:((indexPath:NSIndexPath)->CGFloat)?
     
     
     var refreshState:RefreshState{
@@ -94,6 +96,8 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
     
     // UIScrollViewDelegate协议 实现方法
     func scrollViewDidScroll(scrollView: UIScrollView) {
+        
+        if isCanRefresh {
         if self.contentOffset.y < -SwitchPoint - self.originalInsetTop {
             if self.refreshState == RefreshState.RefreshStateNormal {//小于临界值（在触发点以下），如果状态是正常就转为下拉刷新，如果正在刷新或者已经是下拉刷新则不变
                 self.refreshState = RefreshState.RefreshStatePulling;
@@ -108,6 +112,7 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
                     self.contentInset = UIEdgeInsetsMake(self.originalInsetTop+SwitchPoint, 0, 0, 0);//改变contentInset的值就可以取消回弹效果停留在当前位置了 关于contentIinset的介绍，可以查看我的上一篇文章
                     self.refreshState = RefreshState.RefreshStateLoading;
                 }
+        }
         
     
     }
@@ -129,32 +134,49 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
     }
     
     
-    func setCellView(viewOpr:(tableView: UITableView, indexPath: NSIndexPath,cell:UITableViewCell?)->UITableViewCell){
-        self.tableViewOpr=viewOpr;
-
-        
-    }
     
-    func setOnItemClick(viewOpr:(indexPath:NSIndexPath)->()){
-        self.cellClick=viewOpr;
-        
-    }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        var cell1:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId,forIndexPath: indexPath) as UITableViewCell
+        let cell1:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId,forIndexPath: indexPath) as UITableViewCell
         return self.tableViewOpr!(tableView: tableView, indexPath: indexPath,cell:cell1);
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if  self.cellClick != nil{
-            self.cellClick!(indexPath: indexPath)
+        if  self.itemClick != nil{
+            self.itemClick!(indexPath: indexPath)
             
         }
+    }
+    
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if  self.itemHeight != nil{
+            return self.itemHeight!(indexPath: indexPath)
+            
+        }
+        return 50;
     }
 
     
     
+    
+    
+    func setCellView(viewOpr:(tableView: UITableView, indexPath: NSIndexPath,cell:UITableViewCell?)->UITableViewCell){
+        self.tableViewOpr=viewOpr;
+        
+        
+    }
+    
+    func setOnItemClick(viewOpr:(indexPath:NSIndexPath)->()){
+        self.itemClick=viewOpr;
+        
+    }
+    
+    func setCellHeight(viewOpr:(indexPath:NSIndexPath)->CGFloat){
+        self.itemHeight=viewOpr;
+        
+    }
     
     
     
