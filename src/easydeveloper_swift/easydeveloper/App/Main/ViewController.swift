@@ -11,8 +11,7 @@ import UIKit
 class ViewController: BaseTableViewContrller {
     
     
-    let list:[Dictionary<String,AnyObject>] = [["name":"gaolu","age":11],["name":"egojit","age":11]]
-    
+    let list:[Dictionary<String,AnyObject>] = [["name":"gaolu","age":11],["name":"章伟","age":11]]
     override func viewDidLoad() {
         super.viewDidLoad("ViewController")
     }
