@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0D47D22177F9052DD027B5EF /* libPods-easydeveloper_swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A47696BB250732E9A5A9FDC0 /* libPods-easydeveloper_swift.a */; };
-		71EBC6CE38999C1C0954DB29 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E41EF95729312F34A32EF1 /* libPods.a */; };
 		DE6BD0751D409BD1009867F5 /* HttpHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6BD0741D409BD1009867F5 /* HttpHelper.swift */; };
+		DEB505881D48A17E0047A2E3 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB505871D48A17E0047A2E3 /* ListView.swift */; };
 		DECE5FEB1D472D4200EA0B2B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DECE5FEA1D472D4200EA0B2B /* BaseViewController.swift */; };
 		DEF04F601D45F1370050C011 /* CoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F5F1D45F1370050C011 /* CoreController.swift */; };
 		DEF04F621D45F2000050C011 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF04F611D45F2000050C011 /* BaseTableViewController.swift */; };
@@ -37,6 +37,7 @@
 		DE24C6C01D4070A000A6EB49 /* easydeveloper_swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easydeveloper_swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6BD0731D409A62009867F5 /* app_ bridging_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "app_ bridging_header.h"; sourceTree = "<group>"; };
 		DE6BD0741D409BD1009867F5 /* HttpHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpHelper.swift; sourceTree = "<group>"; };
+		DEB505871D48A17E0047A2E3 /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		DECE5FEA1D472D4200EA0B2B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		DEF04F5F1D45F1370050C011 /* CoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreController.swift; sourceTree = "<group>"; };
 		DEF04F611D45F2000050C011 /* BaseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71EBC6CE38999C1C0954DB29 /* libPods.a in Frameworks */,
 				0D47D22177F9052DD027B5EF /* libPods-easydeveloper_swift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -106,6 +106,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		DEB505831D48998D0047A2E3 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				DEB505841D4899A60047A2E3 /* Views */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		DEB505841D4899A60047A2E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEB505871D48A17E0047A2E3 /* ListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DECE5FEC1D4766CF00EA0B2B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +132,7 @@
 		DEF585C11D4095C6002B32E4 /* easydeveloper */ = {
 			isa = PBXGroup;
 			children = (
+				DEB505831D48998D0047A2E3 /* Libs */,
 				DEF585C21D4095C6002B32E4 /* App */,
 				DEF585C51D4095C6002B32E4 /* Base */,
 				DEF585C71D4095C6002B32E4 /* Core */,
@@ -190,6 +207,7 @@
 				DE24C6BE1D4070A000A6EB49 /* Resources */,
 				65E9E0CF5BDE0469FE6E05E3 /* [CP] Embed Pods Frameworks */,
 				4156F64649934AFEE0F8E124 /* [CP] Copy Pods Resources */,
+				8E2822ACA77FDD2C2BDCC86E /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -294,6 +312,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easydeveloper_swift/Pods-easydeveloper_swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8E2822ACA77FDD2C2BDCC86E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-easydeveloper_swift/Pods-easydeveloper_swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,6 +342,7 @@
 				DECE5FEB1D472D4200EA0B2B /* BaseViewController.swift in Sources */,
 				DEF04F681D45FCDB0050C011 /* StringExt.swift in Sources */,
 				DEF04F601D45F1370050C011 /* CoreController.swift in Sources */,
+				DEB505881D48A17E0047A2E3 /* ListView.swift in Sources */,
 				DEF585D11D4095C6002B32E4 /* ViewController.swift in Sources */,
 				DE6BD0751D409BD1009867F5 /* HttpHelper.swift in Sources */,
 				DEF04F661D45F5350050C011 /* Utils.swift in Sources */,

@@ -19,28 +19,27 @@ class ViewController: BaseTableViewContrller {
 
     
     
-    
-    
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(animated)
           Test()
-        self.setData(list)
-        LogUtil.i(nil, info: "\(object_getClassName(self))")
+        
+        self.tableView.setData(list)
+        self.tableView.setCellView { (tableView, indexPath, cell) -> UITableViewCell in
+            var cellMid=cell;
+            if cellMid == nil{
+                cellMid = UITableViewCell(frame: CGRect(x: 0, y: 0, width: self.tableView.frame.width, height: 50))
+            }
+            let row=indexPath.row as Int
+            let dic:Dictionary<String,AnyObject>=self.list[row];
+            cellMid!.textLabel?.text = dic["name"] as? String;
+            return cellMid!;
+
+        }
+        self.tableView.setOnItemClick { (indexPath) -> () in
+             LogUtil.i(nil,info: "点击行\(indexPath.row)")
+        }
       
     }
-
-    //实现了数据源协议
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
-        var cell:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(cellId,forIndexPath: indexPath) as UITableViewCell
-        if cell == nil{
-            cell=UITableViewCell(frame: CGRect(x: 0, y: 0, width: view!.frame.width, height: 50))
-        }
-        let row=indexPath.row as Int
-        let dic:Dictionary<String,AnyObject>=list[row];
-        cell!.textLabel?.text = dic["name"] as? String;
-        return cell!;
-    }
-    
     
     func Test(){
         let dic:Dictionary<String,String> = ["name":"egojit","age":"12"];
