@@ -15,8 +15,8 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
     var isCanLoadMore=false;
     private var _refreshState:RefreshState=RefreshState.RefreshStateNormal
     var pulldownLabel:UILabel?;
-    var SwitchPoint:CGFloat = 60;
-    var originalInsetTop:CGFloat=10.00;
+    var SwitchPoint:CGFloat = 70;
+    var originalInsetTop:CGFloat=40.00;
     var numOfSection:Int!
     var numOfRow:Int!;
     var cellId:String="cell"
@@ -27,12 +27,16 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
     
      var itemHeight:((indexPath:NSIndexPath)->CGFloat)?
     
+     var lodingData:(()->())?
+    
+    
     
     var refreshState:RefreshState{
         get{
             return _refreshState
         }
         set(value){
+            initTopView()
             _refreshState = value;
             switch (value) {
             case RefreshState.RefreshStateNormal:
@@ -42,24 +46,24 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
             case RefreshState.RefreshStateLoading:
                 self.pulldownLabel!.text = "正在刷新...";
                 self.pulldownLabel!.sizeToFit();
-//                if(self.refreshBlock){
-//                    self.refreshBlock();//这里就是你要执行的耗时的操作
-//                }
+                if self.lodingData != nil{
+                    self.lodingData!();//这里就是你要执行的耗时的操作
+                }
                 break;
             case RefreshState.RefreshStatePulling:
                 self.pulldownLabel!.text = "松开即可刷新";
                 self.pulldownLabel!.sizeToFit();
                 break;
-            default:
-                break;
+           
             }
         }
     }
     
     
     //是否可以下拉刷新
-    func setRefeshEnable(isCanRefreshP: Bool){
+    func setRefeshEnable(isCanRefreshP: Bool,loadData: ()->()){
         self.isCanRefresh=isCanRefreshP;
+        self.lodingData=loadData;
     }
     
     //是否可以加载更多
@@ -67,25 +71,55 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
         self.isCanLoadMore=isCanLoadMoreP;
     }
     
+    func refreshComplet(){
+        if self.refreshState == RefreshState.RefreshStateLoading {
+            self.refreshState = RefreshState.RefreshStateNormal;
+            
+            UIView.animateWithDuration(0.3, animations: { () -> Void in
+                
+                
+                self.contentInset = UIEdgeInsetsMake(self.originalInsetTop, 0, 0, 0);
+               
+            })
+            
+//            UIView animateWithDuration:0.3 animations:^{
+//                self.tableView.contentInset = UIEdgeInsetsMake(self.originalInsetTop, 0, 0, 0);
+//                } completion:nil];
+        }
+    }
+    
     
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        pulldownLabel=UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 50));
-        self.tableHeaderView = pulldownLabel;
-        pulldownLabel?.textColor=UIColor.blackColor()
+        
+//       initTopView()
          self.delegate=self;
         self.dataSource=self;
         numOfSection=1;
         
     }
     
+    
+    func initTopView(){
+        
+        let headerView=UIView(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: self.originalInsetTop))
+        
+        pulldownLabel=UILabel();
+        
+        pulldownLabel!.frame.origin = CGPoint(x: (headerView.frame.width-pulldownLabel!.frame.width)/2, y: (headerView.frame.height-pulldownLabel!.frame.height)/2)
+        
+        headerView.addSubview(pulldownLabel!)
+        self.tableHeaderView = headerView;
+        pulldownLabel?.textColor=UIColor.blackColor()
+//        originalInsetTop=self.contentOffset.y-(self.tableHeaderView?.frame.height)!;
+    }
+    
     init(frame: CGRect,cellId:String, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
         self.cellId=cellId;
-        pulldownLabel=UILabel(frame: CGRect(x: 0, y: 0, width: self.frame.width, height: 50));
-        self.tableHeaderView = pulldownLabel;
-        pulldownLabel?.textColor=UIColor.blackColor()
+        
+//        initTopView()
         self.delegate=self;
         self.dataSource=self;
         numOfSection=1
@@ -98,7 +132,8 @@ class ListView:UITableView,UITableViewDelegate, UITableViewDataSource{
     func scrollViewDidScroll(scrollView: UIScrollView) {
         
         if isCanRefresh {
-        if self.contentOffset.y < -SwitchPoint - self.originalInsetTop {
+            let offY=self.contentOffset.y
+            if offY < -SwitchPoint - self.originalInsetTop {
             if self.refreshState == RefreshState.RefreshStateNormal {//小于临界值（在触发点以下），如果状态是正常就转为下拉刷新，如果正在刷新或者已经是下拉刷新则不变
                 self.refreshState = RefreshState.RefreshStatePulling;
             }

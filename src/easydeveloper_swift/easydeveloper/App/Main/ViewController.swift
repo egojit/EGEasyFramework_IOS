@@ -21,7 +21,7 @@ class ViewController: BaseTableViewContrller {
     
     override func viewWillAppear(animated: Bool) {
         super.viewDidAppear(animated)
-          Test()
+        
         
         self.tableView.setData(list)
         self.tableView.setCellView { (tableView, indexPath, cell) -> UITableViewCell in
@@ -34,8 +34,9 @@ class ViewController: BaseTableViewContrller {
             cellMid!.textLabel?.text = dic["name"] as? String;
             return cellMid!;
         }
-//        self.tableView.setRefeshEnable(true);
-        
+        self.tableView.setRefeshEnable(true) { () -> () in
+            self.Test();
+        }
         self.tableView.setOnItemClick { (indexPath) -> () in
              LogUtil.i(nil,info: "点击行\(indexPath.row)")
         }
@@ -65,7 +66,9 @@ class ViewController: BaseTableViewContrller {
     func Success(result:String){
 //         self.showSuccessMessage("成功！");
 //         self.showLoding("加载中……")
+        self.tableView.refreshComplet();
         self.hideLoding()
+        
        
     }
     //
